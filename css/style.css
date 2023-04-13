@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+}
+
+.flex-container {
+
+    display: flex;
+    border: 1px solid rgb(206, 245, 8);
+}
+
+nav {
+
+    width: 100%;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+}
+
+nav div:first-child {
+
+    display: flex;
+    padding-left: 0.5%;
+}
+
+nav div:first-child div {
+
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#initial {
+
+    background-color: red;
+}
+
+nav div:last-child {
+
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#section-top {
+
+    overflow: auto;
+    height: 50vw;
+    background-image: url(../img/Sunset_woods.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#lore {
+
+    flex-basis: 75%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.481);
+    color: white;
+    text-align: center;
+    text-justify: inter-word;
+    margin: 5% 0% 0% 0%;
+    padding-bottom: 1%;
+}
+
+#lore p {
+
+    font-size: 75%;
+    padding: 0% 2%;
+}
+
+#buttons {
+
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+
+    font-size: 75%;
+}
+
+#section-central {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 1%;
+}
+
+.row {
+
+    flex-direction: row;
+    margin-bottom: 1%;
+    overflow: auto;
+}
+
+.image {
+
+    align-items: center;
+    border: 1px solid red;
+}
+
+.image img {
+
+    width: 50vw;
+
+}
+
+.text {
+
+    padding: 1%;
+    margin-left: 3%;
+    align-items: center;
+}
+
+.text p {
+
+    font-size: 100%;
+}
+
+#last-img {
+
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#last-img div {
+    
+    width: 33.33%;
+    border: 1px solid black;
+}
+
+#last-img div img {
+
+    width: 100%;
+    height: 100%;   
+}
+
+#formular {
+
+    justify-content: center;
+    margin-top: 0.1%;
+}
+
+#sub-formular {
+    
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    outline: 1px solid black;
+}
+
+.par {
+    
+    width: 100%;
+    justify-content: space-between;
+}
+
+label {
+
+    text-align: center;
+}
+
+#botton-form {
+
+    margin-top: 1%;
+    display: flex;
+}
+
+footer {
+
+    justify-content: center;
+    margin-top: 1%;
+}
+
+footer p {
+
+    margin: 2%;
+}
+
+@media screen and (max-width: 457px) {
+
+    .row {
+
+        flex-direction: column;
+    }
+
+    .image {
+
+        height: 50vw;
+        background-image: url(../img/flower_margarita.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    #image-clavel {
+
+        background-image: url(../img/flower_clavel.jpg);
+    }
+
+    #image-rose {
+
+        background-image: url(../img/flower_orange-rose.jpg);
+    }
+
+    .image img {
+
+        display: none;
+    }
+
+    .text {
+
+        margin-left: 0%;
+    }
+
+    .text p {
+
+        text-align: center;
+        text-justify: inter-word;
+    }
+
+    #last-img div {
+    
+        width: 50%;
+    }
+
+    #sub-formular {
+    
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        outline: 1px solid black;
+    }
+
+    label {
+
+        font-size: 1.2rem;
+    }
+
+    .par input {
+
+        width: 75%;
+    }
+
+    #b-form {
+
+        width: 100%;
+        justify-content: space-around;
+        border: 2px solid red;
+    }
+
+    #b-form div {
+
+        margin-left: 2%;
+    }
+
+    #b-form input {
+        
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 580px) {
+
+    nav {
+
+        justify-content: baseline;
+        align-items: center;
+    }
+
+    #section-top {
+
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    #lore p {
+
+        font-size: 100%;
+    }
+
+    button {
+
+        font-size: 100%;
+    }
+
+    #section-central {
+
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 1%;
+    }
+
+    .row {
+        
+        max-width: 30vw;
+        margin-top: 2%;
+        flex: 1;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .image {
+
+        background-image: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .image img {
+
+        width: 100%;
+    }
+
+    .text {
+
+        width: 100%;
+        margin-left: 0%;
+    }    
+}
+
+@media screen and (min-width: 780px) {
+
+    .row {
+        
+        max-width: 20vw;
+    }
+}
